@@ -29,6 +29,27 @@ namespace DemoWebAPI.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [HttpGet]
+        [Route("GetNumbers")]
+        public IActionResult GetNumbers()
+        {
+            try
+            {
+                List<int> Nos = new List<int>();
+                Nos.Add(100);
+                Nos.Add(120);
+                Nos.Add(140);
+                Nos.Add(160);
+                Nos.Add(180);
+
+                return Ok(Nos);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
            
         }
     }

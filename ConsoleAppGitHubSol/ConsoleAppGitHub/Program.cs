@@ -19,6 +19,8 @@ namespace MyApp
             Console.WriteLine("The Sum is : " + c);
             c = obj.Sub(a, b);
             Console.WriteLine("The Sub is : " + c);
+            c = obj.Mul(a, b);
+            Console.WriteLine("The Mul is : " + c);
 
             Console.WriteLine("Program Completed...!");
             Console.ReadKey();

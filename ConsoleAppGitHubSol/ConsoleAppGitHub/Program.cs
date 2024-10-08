@@ -21,6 +21,8 @@ namespace MyApp
             Console.WriteLine("The Sub is : " + c);
             c = obj.Mul(a, b);
             Console.WriteLine("The Mul is : " + c);
+            c = obj.Div(a, b);
+            Console.WriteLine("The Div is : " + c);
 
             Console.WriteLine("Program Completed...!");
             Console.ReadKey();
